@@ -173,11 +173,10 @@ a:active{
     
 }
 
-.texto__tecologias{
+.tecologias__texto{
     width: 30%;
 }
-
-.container__tecnologias{
+.tecnologias__container{
     justify-content: center;
     height: 60vh;
     display: flex;
@@ -191,7 +190,7 @@ a:active{
 }
 
 /*footer*/
-.icono__redes{
+.footer__redes{
     height: 30px;
 }
 

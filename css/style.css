@@ -1,0 +1,225 @@
+/*Responsive */
+@media (max-width: 320px) {
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  header {
+    display: flex;
+    flex-direction: column; }
+  .menu__navegacion {
+    flex-direction: column;
+    padding-top: 1rem; }
+  .tecnologias {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; }
+  .contenido__banner h3 {
+    font-size: 35px; }
+  .proyectos__cartas {
+    justify-content: center;
+    gap: 10px;
+    padding: 0; }
+  .foto__nosotros {
+    width: 300px; } }
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .menu__navegacion {
+    flex-direction: column;
+    padding-top: 1rem; }
+  header {
+    display: flex;
+    flex-direction: column; }
+  .proyectos__cartas {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0; }
+  .proyectos {
+    height: 100%; }
+  .container__tecnologias {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+  .texto__tecologias {
+    text-align: center;
+    width: 95%; }
+  .tecnologias {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; }
+  .contenido__proyecto {
+    align-items: center;
+    justify-content: center; }
+  .imagen__tecnologias {
+    display: none; }
+  .contenido__banner h3 {
+    font-size: 35px; }
+  .contenido__proyecto p {
+    text-align: center; }
+  h2 {
+    font-size: 35px; }
+  .foto__nosotros {
+    width: 300px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif; }
+
+body {
+  background-color: #141414; }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: white; }
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white; }
+
+p {
+  color: white;
+  font-weight: 400; }
+
+.proyectos__cartas {
+  justify-content: center;
+  gap: 10px;
+  padding: 0; }
+
+.menu__navegaciona {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .4s; }
+  .menu__navegaciona:hover {
+    color: #7852d1; }
+  .menu__navegaciona:active {
+    font-weight: 900; }
+  .menu__navegacionaactive {
+    border: 1px solid #7852d1;
+    padding: 5px 10px; }
+
+/*Banner*/
+.banner {
+  background-image: url("../recursos/blob-scene-haikei.svg");
+  background-color: #141414;
+  padding: 0 50px;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .banner__parrafo {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    margin-top: 20px; }
+  .bannerh3 {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 0px;
+    color: white; }
+
+.boton__sitio {
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #7852d1;
+  padding: 10px 20px;
+  align-self: baseline;
+  transition: all .4s; }
+
+.boton:hover {
+  color: white;
+  background-color: #7852d1; }
+
+/*proyectos INICIO*/
+.proyectos {
+  background-color: #17171a;
+  height: 80vh; }
+  .proyectos__cartas {
+    gap: 10px;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+.card-header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px; }
+
+.contenido__proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+/*Tecnologias inicio*/
+.tecnologias {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .tecnologias__container {
+    justify-content: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .tecnologias__texto {
+    width: 30%; }
+  .tecnologias__imagen {
+    justify-self: end; }
+
+/*footer*/
+.footer__redes {
+  height: 30px; }
+
+/*PAGINA NOSOOTROS---------------------------------------------------------*/
+.foto__nosotros {
+  width: 500px; }
+
+.grid__nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0; }
+
+.grid__nosotros p {
+  font-size: 20px;
+  text-align: justify; }
+
+.grid__nosotros .row {
+  align-items: center; }
+
+img.icono__habilidad {
+  width: 100px; }
+
+.container {
+  padding-bottom: 2rem; }
+
+.acomodar__resto {
+  display: flex;
+  align-items: center;
+  justify-content: center; }

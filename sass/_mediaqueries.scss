@@ -1,0 +1,122 @@
+  /*Responsive */
+   
+  @media (max-width:320px){
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+       
+        
+   
+    }
+
+    .menu__navegacion{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .tecnologias{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .contenido__banner h3{
+        font-size: 35px;
+
+    }
+
+    .proyectos__cartas{
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .foto__nosotros{
+        width: 300px;
+    }
+
+  
+
+}
+
+@media (max-width: 768px){
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu__navegacion{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .proyectos__cartas{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .proyectos{
+        height: 100%;
+    }
+
+    .container__tecnologias{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .texto__tecologias{
+        text-align: center;
+        width: 95%;
+    }
+
+    .tecnologias{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+
+
+    }
+
+    .contenido__proyecto{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen__tecnologias{
+        display: none;
+    }
+    .contenido__banner h3{
+        font-size: 35px;
+        
+    }
+    .contenido__proyecto p{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .foto__nosotros{
+        width: 300px;
+    }
+}

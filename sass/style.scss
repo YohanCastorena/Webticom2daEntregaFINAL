@@ -1,0 +1,228 @@
+@import 'variables';
+@import 'mediaqueries';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-principal;
+   }
+   body{
+       background-color:$color-fondo;
+   }
+
+
+   h2{
+       text-align: center;
+       font-size: 50px;
+       font-weight: 700;
+       color: $blanco-titulos;
+   }
+   
+   h3{
+       font-size: 30px;
+       font-weight: 700;
+       color: $blanco-titulos;
+   }
+   
+   p{
+       color: $blanco-titulos;
+       font-weight: 400;
+   }
+   
+   
+   
+   .proyectos__cartas{
+       justify-content: center;
+       gap: 10px;
+       padding: 0;
+   }
+
+
+
+   .menu__navegacion {
+       &a{
+        width: 100%;
+        color: $blanco-titulos;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: .4s;
+
+        &:hover{
+            color: $color-morado;
+        }
+
+        &:active{
+            font-weight: 900;
+        }
+
+        &active{
+            border: 1px solid $color-morado;
+            padding: 5px 10px;
+        }
+
+    }
+       
+   }
+
+
+   
+   
+   /*Banner*/
+
+   
+   
+  .banner{
+    background-image: url('../recursos/blob-scene-haikei.svg');
+    background-color:$color-fondo;
+    padding: 0 50px;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+      &__parrafo{
+        font-size: 20px;
+       font-weight: 200;
+       color: $blanco-titulos;
+       margin-top: 20px;
+      }
+
+      &h3{
+        font-size: 50px;
+        font-weight: 900;
+        padding: 10px 0px;
+        color: $blanco-titulos;
+      }
+
+  }
+
+  .boton{
+    &__sitio{
+     margin: 10px 0;
+     text-decoration: none;
+     color: $blanco-titulos;
+     border: 1px solid $color-morado;
+     padding: 10px 20px;
+     align-self: baseline;
+     transition: all .4s;
+    }
+
+    &:hover{
+     color: $blanco-titulos;
+     background-color: $color-morado;
+    }
+
+}
+
+   
+   /*proyectos INICIO*/
+   
+   
+   
+   
+   .proyectos{
+       background-color: $color-cartas;
+       height: 80vh;
+       &__cartas{
+            gap: 10px;
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+       }
+   }
+   
+   .card-header{
+       text-align: center;
+       color: $blanco-titulos;
+       font-weight: bold;
+       font-size: 30px;
+   }
+   
+   .contenido__proyecto{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+   }
+   
+   
+   
+   
+   /*Tecnologias inicio*/
+   .tecnologias{
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+
+       &__container{
+        justify-content: center;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+       }
+
+       &__texto{
+        width: 30%;
+       }
+
+       &__imagen{
+        justify-self: end;
+       }
+
+       
+   }
+
+   
+   /*footer*/
+   .footer__redes{
+       height: 30px;
+   }
+   
+   
+   
+   /*PAGINA NOSOOTROS---------------------------------------------------------*/
+   .foto__nosotros{
+       width: 500px;
+   }
+   
+   .grid__nosotros{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 1rem 0;
+   
+   }
+   
+   .grid__nosotros p{
+   
+       font-size: 20px;
+       text-align: justify;
+   }
+   
+   .grid__nosotros .row{
+       align-items: center;
+   }
+   
+   img.icono__habilidad{
+     width: 100px;  
+   }
+   
+   .container{
+       padding-bottom: 2rem;
+   }
+   
+   .acomodar__resto{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
