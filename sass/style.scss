@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'mediaqueries';
+@import 'header';
+@import 'sasscript.scss';
 
 *{
     margin: 0;
@@ -10,11 +12,19 @@
        background-color:$color-fondo;
    }
 
+   h1{
+       text-align: center;
+       font-size: 2rem;
+       font-weight: 900;
+       color: $blanco-titulos;
+       padding: 2rem 0;
+   }
+
 
    h2{
        text-align: center;
        font-size: 50px;
-       font-weight: 700;
+       font-weight: 900;
        color: $blanco-titulos;
    }
    
@@ -125,13 +135,16 @@
    
    .proyectos{
        background-color: $color-cartas;
-       height: 80vh;
+      
+    
        &__cartas{
             gap: 10px;
             padding: 0 3rem;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            padding-bottom: 2rem;
+           
        }
    }
    
@@ -148,6 +161,7 @@
        align-items: center;
        padding-top: 1rem;
        padding-bottom: 1rem;
+       
    }
    
    
@@ -189,7 +203,7 @@
    
    
    
-   /*PAGINA NOSOOTROS---------------------------------------------------------*/
+   /*PAGINA NOSOTROS---------------------------------------------------------*/
    .foto__nosotros{
        width: 500px;
    }
@@ -226,3 +240,34 @@
        align-items: center;
        justify-content: center;
    }
+
+   .servicios{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       &__texto{
+           padding: 3rem;
+           text-align: justify;
+        
+           
+       }
+       
+   }
+
+   .formulario{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       
+       label{
+           color: $blanco-titulos;
+       }
+
+       iframe{
+           padding: 1rem 0rem;
+       }
+
+   }
+
+ 

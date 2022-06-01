@@ -1,3 +1,9 @@
+/*MIXIN*/
+.clase-ejemplo {
+  font-size: 2rem;
+  color: red;
+  padding: 1rem 0; }
+
 /*Responsive */
 @media (max-width: 320px) {
   ul {
@@ -23,7 +29,20 @@
     gap: 10px;
     padding: 0; }
   .foto__nosotros {
-    width: 300px; } }
+    width: 300px; }
+  h1 {
+    font-size: 1rem; }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .servicios__texto {
+    flex-direction: column;
+    text-align: center;
+    text-align: center; }
+  .servicios h3 {
+    font-size: 25px;
+    text-align: center; } }
 
 @media (max-width: 768px) {
   ul {
@@ -57,6 +76,8 @@
     justify-content: center;
     align-items: center;
     text-align: justify; }
+    .tecnologias__imagen {
+      display: none; }
   .contenido__proyecto {
     align-items: center;
     justify-content: center; }
@@ -66,10 +87,61 @@
     font-size: 35px; }
   .contenido__proyecto p {
     text-align: center; }
+  h1 {
+    font-size: 2rem; }
   h2 {
     font-size: 35px; }
   .foto__nosotros {
-    width: 300px; } }
+    width: 300px; }
+  ul {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  iframe {
+    width: 85%; }
+  .servicios__texto {
+    flex-direction: column;
+    text-align: center; }
+  .servicios h3 {
+    font-size: 25px;
+    text-align: center; } }
+
+/*media queries, columnas grid, rows grid, areas, height de portada, flex directions, justify */
+header {
+  width: 100%;
+  background-color: #212529;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+ul {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  list-style: none; }
+
+.menu__navegacion a {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .4s; }
+
+.menu__navegacion a:hover {
+  color: #7852d1; }
+
+a:active {
+  font-weight: 900; }
+
+.active {
+  border: 1px solid #7852d1;
+  padding: 5px 10px; }
+
+.logo {
+  width: 200px; }
 
 * {
   margin: 0;
@@ -79,10 +151,17 @@
 body {
   background-color: #141414; }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  padding: 2rem 0; }
+
 h2 {
   text-align: center;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 900;
   color: white; }
 
 h3 {
@@ -151,14 +230,14 @@ p {
 
 /*proyectos INICIO*/
 .proyectos {
-  background-color: #17171a;
-  height: 80vh; }
+  background-color: #17171a; }
   .proyectos__cartas {
     gap: 10px;
     padding: 0 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: center;
+    padding-bottom: 2rem; }
 
 .card-header {
   text-align: center;
@@ -195,7 +274,7 @@ p {
 .footer__redes {
   height: 30px; }
 
-/*PAGINA NOSOOTROS---------------------------------------------------------*/
+/*PAGINA NOSOTROS---------------------------------------------------------*/
 .foto__nosotros {
   width: 500px; }
 
@@ -223,3 +302,21 @@ img.icono__habilidad {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .servicios__texto {
+    padding: 3rem;
+    text-align: justify; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .formulario label {
+    color: white; }
+  .formulario iframe {
+    padding: 1rem 0rem; }

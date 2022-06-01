@@ -1,5 +1,22 @@
 $color-fondo:#141414;
-$font-principal:'Sora', sans-serif;
 $blanco-titulos:white;
 $color-morado:#7852d1;
 $color-cartas:#17171a;
+
+$font-principal:'Sora', sans-serif;
+
+
+
+
+
+/*MIXIN*/
+
+@mixin tituloSize($color) {
+    font-size: 2rem;
+    color: $color;
+    padding: 1rem 0;
+}
+
+.clase-ejemplo{
+    @include tituloSize(red);
+}

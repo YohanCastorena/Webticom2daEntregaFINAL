@@ -1,6 +1,9 @@
   /*Responsive */
+
+  @import 'sasscript';
    
   @media (max-width:320px){
+
     ul{
         flex-direction: column;
         justify-content: center;
@@ -43,6 +46,34 @@
         width: 300px;
     }
 
+    h1{
+        font-size: 1rem;
+    }
+
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
+
+    .servicios{
+
+        &__texto{
+            flex-direction: column;
+            text-align: center;
+            @include justifcar;
+                
+        }
+        
+        h3{
+            font-size: 25px;
+            text-align: center;
+        }
+
+    }
   
 
 }
@@ -92,7 +123,9 @@
         justify-content: center;
         align-items: center;
         text-align: justify;
-
+        &__imagen{
+            display: none;
+        }
 
     }
 
@@ -112,6 +145,10 @@
         text-align: center;
     }
 
+    h1{
+        font-size: 2rem;
+    }
+
     h2{
         font-size: 35px;
     }
@@ -119,4 +156,33 @@
     .foto__nosotros{
         width: 300px;
     }
+
+    ul{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        width: 85%;
+    }
+
+    .servicios{
+
+        &__texto{
+            flex-direction: column;
+            text-align: center;
+                  
+        }
+
+        h3{
+            font-size: 25px;
+            text-align: center;
+        }
+        
+
+    }
 }
+
+/*media queries, columnas grid, rows grid, areas, height de portada, flex directions, justify */

@@ -1,24 +1,45 @@
-header{
-    &logo{
-        width: 200px;
-    }
-    
+  
+   header{
     width: 100%;
     background-color: #212529;
     padding: 20px;
-    color:$blanco-titulos;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &ul{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        list-style: none;
-        padding: 0;
-    }
 }
 
+ul{
+    width: 100%;
+    display: flex;
+
+    gap: 10px;
+    list-style: none;
+}
+
+.menu__navegacion a{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.menu__navegacion a:hover{
+    color: #7852d1;
+}
+
+a:active{
+    font-weight: 900;
+ 
+ }
+
+.active{
+    border: 1px solid #7852d1;
+    padding: 5px 10px;
+}
+
+.logo{
+    width: 200px;
+}
 
