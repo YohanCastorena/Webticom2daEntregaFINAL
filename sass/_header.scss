@@ -1,4 +1,4 @@
-  
+@import 'sasscript.scss';
    header{
     width: 100%;
     background-color: #212529;
@@ -42,4 +42,9 @@ a:active{
 .logo{
     width: 200px;
 }
+
+ul{
+    margin: 0;
+}
+
 

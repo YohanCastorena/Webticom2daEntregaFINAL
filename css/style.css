@@ -7,7 +7,6 @@
 /*Responsive */
 @media (max-width: 320px) {
   ul {
-    flex-direction: column;
     justify-content: center;
     align-items: center; }
   header {
@@ -16,7 +15,7 @@
   .menu__navegacion {
     flex-direction: column;
     padding-top: 1rem; }
-  .tecnologias {
+  .tecnologias__container {
     flex-direction: column;
     height: 100%;
     justify-content: center;
@@ -33,7 +32,6 @@
   h1 {
     font-size: 1rem; }
   ul {
-    flex-direction: column;
     justify-content: center;
     align-items: center; }
   .servicios__texto {
@@ -46,7 +44,6 @@
 
 @media (max-width: 768px) {
   ul {
-    flex-direction: column;
     justify-content: center;
     align-items: center; }
   .menu__navegacion {
@@ -62,50 +59,71 @@
     padding: 0; }
   .proyectos {
     height: 100%; }
-  .container__tecnologias {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%; }
-  .texto__tecologias {
-    text-align: center;
-    width: 95%; }
-  .tecnologias {
+  .tecnologias h2 {
+    font-size: 3rem; }
+  .tecnologias__container {
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
     text-align: justify; }
-    .tecnologias__imagen {
-      display: none; }
-  .contenido__proyecto {
-    align-items: center;
-    justify-content: center; }
-  .imagen__tecnologias {
+  .tecnologias__texto h3 {
+    font-size: 20px; }
+  .tecnologias__texto p {
+    font-size: 1rem; }
+  .tecnologias img {
+    display: none; } }
+
+.texto__tecologias {
+  text-align: center;
+  width: 95%; }
+
+.tecnologias {
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify; }
+  .tecnologias__imagen {
     display: none; }
-  .contenido__banner h3 {
-    font-size: 35px; }
-  .contenido__proyecto p {
-    text-align: center; }
-  h1 {
-    font-size: 2rem; }
-  h2 {
-    font-size: 35px; }
-  .foto__nosotros {
-    width: 300px; }
-  ul {
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  iframe {
-    width: 85%; }
-  .servicios__texto {
-    flex-direction: column;
-    text-align: center; }
-  .servicios h3 {
-    font-size: 25px;
-    text-align: center; } }
+
+.contenido__proyecto {
+  align-items: center;
+  justify-content: center; }
+
+.imagen__tecnologias {
+  display: none; }
+
+.contenido__banner h3 {
+  font-size: 35px; }
+
+.contenido__proyecto p {
+  text-align: center; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 35px; }
+
+.foto__nosotros {
+  width: 300px; }
+
+ul {
+  padding: 0;
+  justify-content: center;
+  align-items: center; }
+
+iframe {
+  width: 85%; }
+
+.servicios__texto {
+  flex-direction: column;
+  text-align: center; }
+
+.servicios h3 {
+  font-size: 25px;
+  text-align: center; }
 
 /*media queries, columnas grid, rows grid, areas, height de portada, flex directions, justify */
 header {
@@ -143,6 +161,9 @@ a:active {
 .logo {
   width: 200px; }
 
+ul {
+  margin: 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -178,26 +199,12 @@ p {
   gap: 10px;
   padding: 0; }
 
-.menu__navegaciona {
-  width: 100%;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: .4s; }
-  .menu__navegaciona:hover {
-    color: #7852d1; }
-  .menu__navegaciona:active {
-    font-weight: 900; }
-  .menu__navegacionaactive {
-    border: 1px solid #7852d1;
-    padding: 5px 10px; }
-
 /*Banner*/
 .banner {
   background-image: url("../recursos/blob-scene-haikei.svg");
   background-color: #141414;
   padding: 0 50px;
-  height: 45vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -209,11 +216,6 @@ p {
     font-weight: 200;
     color: white;
     margin-top: 20px; }
-  .bannerh3 {
-    font-size: 50px;
-    font-weight: 900;
-    padding: 10px 0px;
-    color: white; }
 
 .boton__sitio {
   margin: 10px 0;
@@ -266,9 +268,14 @@ p {
     flex-direction: row;
     align-items: center; }
   .tecnologias__texto {
-    width: 30%; }
-  .tecnologias__imagen {
-    justify-self: end; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    text-align: justify; }
+  .tecnologias img {
+    width: 50%; }
 
 /*footer*/
 .footer__redes {

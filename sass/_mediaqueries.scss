@@ -5,7 +5,7 @@
   @media (max-width:320px){
 
     ul{
-        flex-direction: column;
+        
         justify-content: center;
         align-items: center;
     }
@@ -24,11 +24,17 @@
     }
 
     .tecnologias{
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
+        &__container{
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+
+    
+        
+            
+        }
     }
 
     .contenido__banner h3{
@@ -51,7 +57,7 @@
     }
 
     ul{
-        flex-direction: column;
+       
         justify-content: center;
         align-items: center;
     }
@@ -80,7 +86,7 @@
 
 @media (max-width: 768px){
     ul{
-        flex-direction: column;
+        
         justify-content: center;
         align-items: center;
     }
@@ -106,11 +112,32 @@
         height: 100%;
     }
 
-    .container__tecnologias{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+    .tecnologias{
+        h2{
+            font-size: 3rem;
+        }
+        &__container{
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+     
+        }
+
+
+        &__texto{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        img{
+            display: none;
+        }
+        }
     }
     .texto__tecologias{
         text-align: center;
@@ -159,7 +186,7 @@
 
     ul{
         padding: 0;
-        flex-direction: column;
+       
         justify-content: center;
         align-items: center;
     }
@@ -181,8 +208,12 @@
             text-align: center;
         }
         
+       
+       
 
     }
-}
+
+
+
 
 /*media queries, columnas grid, rows grid, areas, height de portada, flex directions, justify */
