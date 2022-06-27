@@ -1,11 +1,358 @@
   /*Responsive */
 
   @import 'sasscript';
-   
-  @media (max-width:320px){
+  
+
+
+
+  @media (min-width: 1024px){
+     .banner{
+        &__parrafo{
+            margin-left: 5rem;
+        }
+
+      h1{
+        margin-left: 5rem;
+        font-size: 3.2rem;
+      }
+
+      img{
+        max-width: 100%;
+        
+      }
+
+      &__contenido{
+        width: 58.5%;
+        padding:0 1rem;
+
+        
+      }
+
+      &__texto{
+        width: 48.5%;
+      }
+
+  }
+  .info{
+    margin: 0 15rem;
+
+    &__textos{
+        margin: 0 15rem;
+    
+        h2{
+            padding: 1rem 0;
+            font-weight: 700;
+        }
+        p{
+            
+            text-align: center;
+        }
+    }
+
+}
+
+  .boton{
+    :hover{
+        font-weight: bold;
+         color: $blanco-titulos;
+         background-color: $color-morado-oscuro;
+        }
+    &__sitio{
+     margin: 10px 0;
+     text-decoration: none;
+     color: $blanco-titulos;
+     background-color: $color-morado-oscuro;
+     border: 2px solid $color-morado-oscuro;
+     border-radius: 5px;
+     padding: 10px 20px;
+
+     transition: all .4s;
+    }
+
+    
+
+}
+
+   .datos{
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+&__negocios{
+    margin: 3rem 1rem;
+    p{
+        @include datos;
+        @include flex;
+    }
+
+    span{
+        color: $blanco-titulos;
+    }
+
+}
+&__publicidad{
+    margin: 3rem 1rem;
+    p{
+        @include datos;
+        @include flex;
+    }
+    span{
+        color: $blanco-titulos;
+    }
+}
+
+&__sitios{
+    margin: 3rem 1rem;
+    p{
+        @include datos;
+        @include flex;            
+    }
+    span{
+        color: $blanco-titulos;
+    }
+}
+
+}
+    .formulario{
+
+        display: flex;
+        padding: 10rem 5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+
+
+       h2{
+           font-size: 2rem;
+           text-align: start;
+           padding: 1rem 0;
+       }
+
+        &__pregunta{
+            padding: 2rem;
+        }
+       
+       label{
+           color: $blanco-titulos;
+       }
+       form{
+        width: 50%;
+       }
+
+   }
+
+   .tecnologias{
+    &__container{
+        flex-direction: row;
+        padding: 10rem 0;
+        margin: 0 15rem;
+    }
+   }
+
+   .servicios{
+       &__texto{
+           padding: 3rem;
+           margin: 0 10rem;
+       }
+       img{
+        width: 35%;
+        padding: 1rem;
+        margin: auto;
+       }
+    }
+
+    .medios{
+        flex-direction: row;
+        &__telefono{
+            margin: 0 1rem 0 0; 
+        }
+    }
+}
+
+@media (min-width: 980px){
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__contenido{
+            width: 100%;
+            padding: 0;
+            h1{
+                text-align: center;
+            }
+        }
+
+        
+
+        &__parrafo{
+           
+            text-align: center;
+        }
+    }
+
+    .formulario{
+        flex-direction: row-reverse;
+        padding: 10rem 1rem;
+        &__pregunta{
+            width: 50%;
+        }
+        form{
+            flex-grow: 1;
+        }
+    }
+
+    
+}
+
+  
+@media (max-width: 768px){
+
+    .banner{
+        img{
+            display: none;
+        }
+        &__contenido{
+            h1{
+                margin-left: 0;
+                font-size: 2rem;
+            }
+        }
+
+        &__parrafo{
+            margin-left: 0;
+        }
+    }
+    ul{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu__navegacion{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .foto__nosotros{
+        width: 95%;
+    }
+    .proyectos__cartas{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .proyectos{
+        height: 100%;
+    }
+
+    .tecnologias{
+        height: 40vh;
+        h2{
+            font-size: 3rem;
+        }
+        &__container{
+            flex-direction: column-reverse;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+     
+        }
+
+
+        &__texto{
+            width: 100%;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        img{
+        padding-bottom: 1rem;
+        }
+        }
+        .datos{
+            flex-direction: column;
+            padding-bottom: 1rem;
+            &__publicidad{
+                margin: 0;
+            }
+
+            &__sitios{
+                margin: 0;
+                span{
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__negocios{
+                margin: 0;
+            }
+           }
+
+           .info{
+            &__textos{
+                margin: 0;
+                h2{
+                    font-size: 2rem;
+                }
+
+                p{
+                    margin: 0;
+                }
+            }
+           }
+           .formulario{
+            h2{
+                padding: 1rem 0;
+                text-align: center;
+            }
+            flex-direction: column-reverse;
+            &__pregunta{
+                width: 95%;
+            }
+            form{
+                width: 95%;
+                padding-bottom: 1rem;
+            }
+           }
+
+           .servicios{
+               &__texto{
+                   padding: 1rem 0;
+                   margin: 0 2rem;
+                   h1{
+                    font-size: 1rem;
+                }
+               }
+               img{
+                width: 95%;
+                margin: auto;
+                padding: .5rem 0;
+               }
+            }
+
+            .medios{
+                flex-direction: column;
+            }
+    }
+
+@media (max-width:320px){
 
     ul{
-        
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -23,23 +370,31 @@
         padding-top: 1rem;
     }
 
+    .banner{
+        h1{
+            text-align: center;
+        }
+        img{
+            display: none;
+        }
+    }
     .tecnologias{
+        h2{
+            font-size: 2rem;
+        }
         &__container{
             flex-direction: column;
             height: 100%;
             justify-content: center;
             align-items: center;
-            text-align: justify;
-
-    
-        
-            
+            text-align: justify;    
         }
-    }
 
-    .contenido__banner h3{
-        font-size: 35px;
-
+        &__texto{
+            h3{
+                margin: 1rem 0;
+            }
+        }
     }
 
     .proyectos__cartas{
@@ -62,15 +417,24 @@
         align-items: center;
     }
 
-    
-    
+    .grid__nosotros{
+        P{
+            margin: 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .foto__nosotros{
+        width: 95%;
+    }
 
     .servicios{
 
         &__texto{
             flex-direction: column;
             text-align: center;
-            @include justifcar;
+            
                 
         }
         
@@ -80,71 +444,65 @@
         }
 
     }
-  
+  .banner{
+    &__contenido{
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+    &__parrafo{
+        p{
+            font-size: .8rem;
+        }
+    }
+  }
+.formulario{
+    &__pregunta{
+        p{
+            text-align: center;
+        }
+    }
+}
+  .info{
+    &__textos{
+        p{
+            font-size: 1rem;
+
+        }
+    }
+  }
+  .medios{
+    align-items: center;
+    flex-direction: column;
+    &__telefono{
+
+        width: 95%;
+    }
+
+    &__correo{
+        width: 95%;
+        p{
+            font-size: 1rem;
+        }
+    }
+   }
 
 }
 
-@media (max-width: 768px){
-    ul{
-        
-        justify-content: center;
-        align-items: center;
-    }
-    .menu__navegacion{
-        flex-direction: column;
-        padding-top: 1rem;
-    }
-
-    header{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .proyectos__cartas{
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 0;
-    }
-
-    .proyectos{
-        height: 100%;
-    }
-
-    .tecnologias{
-        h2{
-            font-size: 3rem;
-        }
-        &__container{
-            flex-direction: column;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: justify;
-     
-        }
-
-
-        &__texto{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-        img{
-            display: none;
-        }
-        }
-    }
     .texto__tecologias{
         text-align: center;
         width: 95%;
     }
 
     .tecnologias{
+        &__container{
+            justify-content: center;
+            img{
+                width: 80%;
+                margin: 0;
+            }
+        }
         flex-direction: column;
         height: 100%;
         justify-content: center;
@@ -153,21 +511,18 @@
         &__imagen{
             display: none;
         }
-
-    }
-
-    .contenido__proyecto{
-        align-items: center;
-        justify-content: center;
-    }
-
-    .imagen__tecnologias{
-        display: none;
-    }
-    .contenido__banner h3{
-        font-size: 35px;
         
     }
+
+    .contenido{
+        &__proyecto{
+            align-items: center;
+            justify-content: center;
+        }
+       
+    }
+        
+    
     .contenido__proyecto p{
         text-align: center;
     }
@@ -184,17 +539,12 @@
         width: 300px;
     }
 
-    ul{
-        padding: 0;
-       
-        justify-content: center;
-        align-items: center;
-    }
 
     iframe{
         width: 85%;
     }
 
+    
     .servicios{
 
         &__texto{
@@ -213,7 +563,7 @@
 
     }
 
+    
 
-
-
+    
 /*media queries, columnas grid, rows grid, areas, height de portada, flex directions, justify */

@@ -1,6 +1,28 @@
-@mixin justifcar {
-    text-align: center;
+
+  @mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-
+@mixin datos{
+  font-size: 5rem;
+  font-weight: bold;
+  height: 10rem;
+  width: 10rem;
+  background-color: $color-morado-oscuro;
+  border-radius: 50%;
+  text-align: center;
+  margin: 1rem 1rem;
+ 
   
+
+}
+
+
+@mixin bordercuadro{
+  background-color: $color-morado-oscuro;
+  border-radius: 5px;
+  padding: 1rem;
+}

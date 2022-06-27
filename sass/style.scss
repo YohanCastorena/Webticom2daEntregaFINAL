@@ -1,7 +1,7 @@
 @import 'variables';
-@import 'mediaqueries';
 @import 'header';
 @import 'sasscript.scss';
+@import 'mediaqueries';
 
 *{
     margin: 0;
@@ -13,7 +13,6 @@
    }
 
    h1{
-       text-align: center;
        font-size: 2rem;
        font-weight: 900;
        color: $blanco-titulos;
@@ -53,22 +52,45 @@
    
    
   .banner{
-    background-image: url('../recursos/blob-scene-haikei.svg');
+    background-image: url('../recursos/hexagon.svg');
     background-color:$color-fondo;
     padding: 0 50px;
-    height: 80vh;
+    padding: 5rem 0;
     background-size: cover;
     background-position: center;
-    text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
 
       &__parrafo{
-        font-size: 20px;
        font-weight: 200;
        color: $blanco-titulos;
-       margin-top: 20px;
+       margin-top: .8rem;
+       @include bordercuadro;
+      }
+
+      h1{
+        
+        font-weight: 900;
+        padding: 1rem 0;
+        
+      }
+
+      img{
+        margin-right: 5rem;
+        max-width: 100%;
+        
+      }
+
+      &__contenido{
+        
+        padding:0 1rem;
+
+        
       }
 
 
@@ -81,17 +103,87 @@
      color: $blanco-titulos;
      border: 1px solid $color-morado;
      padding: 10px 20px;
-     align-self: baseline;
      transition: all .4s;
     }
 
-    &:hover{
+    a:hover{
      color: $blanco-titulos;
-     background-color: $color-morado;
+     background-color: $color-morado-oscuro;
+    }
+
+}
+.info{
+
+    &__negocio{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(14%2c 134%2c 215%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c128 C 57.6%2c138.6 172.8%2c199.8 288%2c181 C 403.2%2c162.2 460.8%2c25.4 576%2c34 C 691.2%2c42.6 748.8%2c229.8 864%2c224 C 979.2%2c218.2 1036.8%2c-2.2 1152%2c5 C 1267.2%2c12.2 1382.4%2c209 1440%2c260L1440 560L0 560z' fill='rgba(0%2c 139%2c 233%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c469 C 96%2c458.2 288%2c413.2 480%2c415 C 672%2c416.8 768%2c481 960%2c478 C 1152%2c475 1344%2c415.6 1440%2c400L1440 560L0 560z' fill='rgba(0%2c 152%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        background-color: #0098ff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+    padding: 0 2rem;
+    &__textos{
+        
+    
+        h2{
+            padding: 1rem 0;
+            font-weight: 700;
+        }
+        p{
+            
+            text-align: justify;
+            padding: 0 1rem;
+        }
     }
 
 }
 
+
+
+.datos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    &__negocios{
+        
+        p{
+            @include datos;
+            @include flex;
+            
+        }
+
+        span{
+            color: $blanco-titulos;
+        }
+
+    }
+    &__publicidad{
+        
+        p{
+            @include datos;
+            @include flex;
+            
+        }
+        span{
+            color: $blanco-titulos;
+           
+        }
+    }
+    &__sitios{
+        
+        p{
+            @include datos;
+            @include flex;            
+        }
+        span{
+            color: $blanco-titulos;
+        }
+    }
+
+}
    
    /*proyectos INICIO*/
    
@@ -99,8 +191,8 @@
    
    
    .proyectos{
-       background-color: $color-cartas;
-      
+       background:  url('../recursos/chispitas.svg');
+        padding:10rem 0;
     
        &__cartas{
             gap: 10px;
@@ -110,6 +202,16 @@
             justify-content: center;
             padding-bottom: 2rem;
            
+       }
+       &__proximo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        span{
+            color: $blanco-titulos;
+        }
        }
    }
    
@@ -121,6 +223,7 @@
    }
    
    .contenido__proyecto{
+    text-align: center;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -128,9 +231,6 @@
        padding-bottom: 1rem;
        
    }
-   
-   
-   
    
    /*Tecnologias inicio*/
    .tecnologias{
@@ -140,12 +240,11 @@
        flex-direction: column;
        padding-top: 1rem;
        padding-bottom: 1rem;
+       background: url('../recursos/chispitas.svg');
 
        &__container{
         justify-content: center;
-        height: 60vh;
         display: flex;
-        flex-direction: row;
         align-items: center;
 
        }
@@ -157,50 +256,65 @@
         flex-direction: column;
         padding: 0 1rem;
         text-align: justify;
-       }
-
-       img{
-        width: 50%;
-       }
-
-       
+        
+       }      
    }
-
    
    /*footer*/
    .footer__redes{
        height: 30px;
    }
    
-   
-   
    /*PAGINA NOSOTROS---------------------------------------------------------*/
    .foto__nosotros{
-       width: 500px;
+       width: 80%;
    }
    
    .grid__nosotros{
+    h1{
+        text-align: center;
+    }
+       background: url('../recursos/chispitas.svg');
        display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
        padding: 1rem 0;
-   
+
+            p{
+                margin: 1rem;
+               font-size: 20px;
+               text-align: center ;
+               
+               @include bordercuadro;
+           }
+        
    }
    
-   .grid__nosotros p{
-   
-       font-size: 20px;
-       text-align: justify;
-   }
+    
    
    .grid__nosotros .row{
+    
        align-items: center;
    }
    
-   img.icono__habilidad{
-     width: 100px;  
-   }
+   .habilidades{
+
+    padding: 2rem 0;
+
+    h2{
+        font-size: 2rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li{
+            color: $blanco-titulos;
+        }
+    }
+}
    
    .container{
        padding-bottom: 2rem;
@@ -213,31 +327,104 @@
    }
 
    .servicios{
+    background: url('../recursos/chispitas.svg');
        display: flex;
        flex-direction: column;
        justify-content: center;
        &__texto{
-           padding: 3rem;
-           text-align: justify;
-        
-           
+           h1{
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 3rem;
+           }
        }
+     
        
    }
 
    .formulario{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       
+        
+        background: url('../recursos/chispitas.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+       h2{
+           font-size: 2rem;
+           
+           padding: 2rem 0;
+       }
+
+      
        label{
            color: $blanco-titulos;
        }
 
-       iframe{
-           padding: 1rem 0rem;
+       form{
+        input{
+            margin: .5rem 0;
+        }
+       }
+       select{
+        margin: .5rem 0;
        }
 
+       textarea{
+        margin: .5rem 0;
+       }
    }
+
+   .tituloformulario{
+    text-align: center;
+    background: url('../recursos/chispitas.svg');
+    margin: 0;
+   }
+
+   .medios{
+    display: flex;
+    gap: 10px;
+    &__telefono{
+       
+        p{
+            font-weight: bold;
+        }
+        background-color: $color-morado-oscuro;
+        border-radius: 4px;
+        padding: 1rem;
+        margin: 1rem 0;
+
+        span{
+            color: $blanco-titulos;
+            font-weight: 400;
+        }
+
+        
+    }
+
+    &__correo{
+        margin: 1rem 0;
+        
+        p{
+            font-weight: bold;
+
+        }
+        background-color: $color-morado-oscuro;
+        border-radius: 4px;
+        padding: 1rem;
+
+        span{
+            color: $blanco-titulos;
+            font-weight: 400;
+        }
+    }
+   }
+
+
+a{
+    text-decoration: none;
+}
+
+
 
