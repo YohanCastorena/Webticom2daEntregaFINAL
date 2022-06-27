@@ -12,5 +12,5 @@ donde el cliente me explica lo que necesita y yo con mis recursos resolver su pr
 
 ## GITHUB
 
-https://webticom.000webhostapp.com
+https://webticomfinal.000webhostapp.com/index.html
 
